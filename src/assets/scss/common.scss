@@ -1,0 +1,59 @@
+@import "./colors";
+
+@font-face {
+  font-family: "VarelaRound";
+  src: local("VarelaRound"), url("../font/VarelaRound-Regular.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+
+  body {
+    margin: 0;
+    height: 100%;
+    background-color: $grey200;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    #root {
+      height: 100%;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: $secondary;
+      }
+
+      p {
+        color: $quaternary;
+      }
+
+      .or_divider {
+        position: relative;
+
+        &:before,
+        &:after {
+          content: "";
+          width: 45%;
+          height: 1px;
+          background-color: $grey100;
+          position: absolute;
+          top: 36px;
+        }
+
+        &:before {
+          left: 0px;
+        }
+
+        &:after {
+          right: 0px;
+        }
+      }
+    }
+  }
+}

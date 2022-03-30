@@ -1,0 +1,40 @@
+import { iDesignation } from "../designation/interface";
+import { iEducation, iExperience } from "../profile/interface";
+
+export interface iEmployee {
+  email: string;
+  bloodGroup: string;
+  cellNo: string;
+  cnic: string;
+  currentAddress: string;
+  employeeCode: string;
+  fatherName: string;
+  fullName: string;
+  gender: Boolean;
+  status: number | string;
+  maritalStatus: string;
+  permanentAddress: string;
+  phoneNo: string;
+  payRate: string;
+  payCurrency: string;
+  payType: string;
+  payPeriod: string;
+  dateOfBirth: string;
+  nationality: string;
+  organization: string;
+  uuid: string;
+  id: string;
+  experiences?: iExperience;
+  qualifications?: iEducation;
+  party?: any;
+  partyType?: any;
+  joiningDate: string;
+  resignationDate: string;
+  designation: iDesignation;
+  salary: number;
+  department: string;
+  role: string;
+  techStack: Array<any>;
+  reportTo: string;
+  emergencyContact: string;
+}

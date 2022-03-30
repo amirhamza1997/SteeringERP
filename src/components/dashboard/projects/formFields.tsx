@@ -1,0 +1,17 @@
+export const projectCreationForm = [
+  { variant: "outlined", type: "text", label: "Project Name", name: "name", placeholder: "John", size: "medium", fullWidth: true, field: "input", validate: { regex: /^[a-zA-Z ]+$/, errorMessage: "Only letters" }, required: true },
+  { variant: "outlined", type: "date", label: "Start Date", name: "startDate", size: "medium", fullWidth: true, field: "input", required: true, },
+  { variant: "outlined", type: "date", label: "End Date", name: "closeDate", size: "medium", fullWidth: true, field: "input" },
+  { variant: "outlined", type: "text", label: "Voice", name: "voice", placeholder: "voice", size: "medium", fullWidth: true, field: "select", required: true, multiple: false, },
+  { variant: "outlined", type: "number", label: "Rate", name: "rate", placeholder: "rate", size: "medium", fullWidth: true, field: "input", required: true, },
+  { variant: "outlined", type: "text", label: "Currency", name: "currency", data: [{ label: "USD" }, { label: "PKR" }], placeholder: "Currency", size: "medium", fullWidth: true, field: "select", required: true, },
+  { variant: "outlined", type: "text", label: "Manager", name: "manager", placeholder: "Manager", size: "medium", fullWidth: true, field: "select", required: true, multiple: false, },
+  { variant: "outlined", type: "text", label: "Client", name: "client", placeholder: "client", size: "medium", fullWidth: true, field: "select", required: true, multiple: false, },
+  { variant: "outlined", type: "text", label: "Resources", name: "resources", placeholder: "resources", size: "medium", fullWidth: true, field: "select", required: true, multiple: true, },
+  { variant: "outlined", type: "text", label: "Technology", name: "typeOfWork", placeholder: "work", size: "medium", fullWidth: true, field: "input", required: true, },
+  { variant: "outlined", type: "text", label: "Email", name: "billingEmail", placeholder: "email", size: "medium", fullWidth: true, field: "input", required: true, },
+  { variant: "outlined", type: "text", label: "Project type", name: "projectType", data: [{ label: "Fixed" }, { label: "Weekly" }, { label: "Monthly" }], placeholder: "pType", size: "medium", fullWidth: true, field: "select", required: true, },
+  { variant: "outlined", type: "text", label: "Terms", name: "term", placeholder: "term", size: "medium", fullWidth: true, field: "input", required: true, multiline: true, rows: 2, },
+  { variant: "outlined", type: "text", label: "Description", name: "description", placeholder: "Lorem ipsum..", size: "medium", fullWidth: true, multiline: true, rows: 2, field: "input", required: true, },
+  { variant: "outlined", type: "text", label: "Notes", name: "notes", placeholder: "notes", size: "medium", fullWidth: true, field: "input", required: true, multiline: true, rows: 2, },
+];

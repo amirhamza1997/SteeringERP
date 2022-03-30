@@ -1,0 +1,25 @@
+@import '../../../../assets/scss/colors.scss';
+@import '../../../../assets/scss/common';
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 8px 0 10px -6px $blue200;
+  z-index: 1;
+  background-color: $white;
+  .inner{
+    width: 224px;
+    transition: 0.7s ease all;
+    margin: 8px;
+    overflow: hidden;
+  }
+  &.close{
+    .inner{
+      width: 51px;
+      transition: 0.7s ease all;
+      overflow: hidden;
+    }
+  }
+}
